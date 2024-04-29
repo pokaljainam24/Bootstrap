@@ -1,0 +1,12 @@
+.carousel{
+    width: 900px;
+    margin: auto;    
+}
+
+.backtop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
