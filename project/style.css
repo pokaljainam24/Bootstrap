@@ -1,0 +1,86 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+navbar{
+    background-color: white;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: blue;
+}
+
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.main{
+    background: url(./3d-rendering-cartoon-like-boy-removebg-preview.png)no-repeat;
+    /* background-size: cover; */
+    background-position: right;
+    margin-left: 200px;
+    height: 95vh;
+}
+
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid black;
+    width: 40%;
+    margin-right: 100px;
+}
+
+.main .btn-1{
+    height: 55px;
+    width: 138px;
+    background-color: blue;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .btn-1:hover{
+    background-color: rgb(43, 43, 172);
+    transition: 0.5s;
+}
+
+.main .btn-2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .btn-2:hover{
+    background-color: rgb(43, 43, 172);
+    color: aliceblue;
+    transition: 0.5s;
+}
