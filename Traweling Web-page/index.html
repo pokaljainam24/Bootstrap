@@ -8,26 +8,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./font/flaticon.css">
 </head>
 
-<body>
+<body class="bg-dark">
 
     <!-- navbar  -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-info fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Tour .</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-airplane-fill me-2"></i> Jp Tour .</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
 
-                    <div class="dropdown bg-light m-auto">
-                        <a class="btn btn-secondary dropdown-toggle bg-white text-dark boarder border-0" href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary p-0 mt-2 dropdown-toggle bg-info text-dark boarder border-0"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown link
                         </a>
 
@@ -39,8 +48,8 @@
                         </ul>
                     </div>
 
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#Services">Services</a>
+                    <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#">Contact Us</a>
                 </div>
             </div>
@@ -49,70 +58,84 @@
 
     <!-- Slider  -->
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5">
+    <section id="carouselExample" class="carousel slide mt-5">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"
+                class="active" aria-current="true"></button>
         </div>
-
-        <div class="carousel-inner w-50 m-auto">
-
-            <div class="carousel-item active" data-bs-interval="100">
-                <img src="./images/beautiful-landmark-fuji-mountain-chureito-pagoda-sunset-japan_335224-11.jpg" class="d-block w-100" alt="img">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+        <div class="carousel-inner">
+            <div class="carousel-item c-item">
+                <img src="./images/beautiful-landmark-fuji-mountain-chureito-pagoda-sunset-japan_335224-11.jpg"
+                    class="d-block w-100 img-fluid c-img" alt="...">
+                <div class="carousel-caption top-0 mt-5">
+                    <p class="mt-5 fs-1 text-info">THE JAPAN WORLD</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">
+                        Tour Book Now
+                    </h1>
+                    <button class="btn btn-primary mt-5 px-4 py-2 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-model">
+                        Book a tour
+                    </button>
                 </div>
             </div>
-
-            <div class="carousel-item" data-bs-interval="200">
-                <img src="./images/city-lima-with-text_23-2150907696.jpg" class="img-fluid" alt="img">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-item c-item">
+                <img src="./images/city-lima-with-text_23-2150907696.jpg" class="d-block w-100 img-fluid c-img"
+                    alt="...">
+                <div class="carousel-caption top-0 mt-5">
+                    <p class="mt-5 fs-1 text-capitalize text-info">BRAZIL DESTINATION</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">
+                        Go and Book Now
+                    </h1>
+                    <button class="btn btn-primary mt-5 px-4 py-2 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-model">
+                        Book a tour
+                    </button>
                 </div>
             </div>
-
-            <div class="carousel-item">
-                <img src="./images/statue-liberty-new-york-city-skyline-usa_268835-777.avif" class="img-fluid" alt="img">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="./images/woman-standing-wat-phra-that-pha-son-kaew-temple-khao-kho-phetchabun-thailand.jpg" class="img-fluid" alt="img">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-item c-item active">
+                <img src="./images/statue-liberty-new-york-city-skyline-usa_268835-777.avif"
+                    class="d-block w-100 img-fluid c-img" alt="...">
+                <div class="carousel-caption top-0 mt-5">
+                    <p class="mt-5 fs-1  text-info text-capitalize">THE UNITED STATES</p>
+                    <h1 class="display-1 fw-bolder  text-capitalize">
+                        Available tours
+                    </h1>
+                    <button class="btn btn-primary mt-5 px-4 py-2 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-model">
+                        Book a tour
+                    </button>
                 </div>
             </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </section>
+    <section class="overview d-flex justify-content-around align-items-center flex-column flex-md-row fs-4">
+        <div><i class="bi bi-airplane-fill me-2"></i> Amazing destinations</div>
+        <div><i class="bi bi-credit-card-fill me-2"></i> only pay 15% up front</div>
+        <div><i class="bi bi-patch-check-fill me-2"></i> 3000+ of customers</div>
+    </section>
 
     <!-- book trip form -->
 
-    <div class="container mt-5">
+    <div class="container mt-5 bg-secondary w-70 rounded p-2">
         <div class="row align-items-center">
-            <div class="col-lg-7">
+            <div class="col-lg-7 m-auto">
                 <div class="intro-wrap">
-                    <h1 class="mb-5"><span class="d-block">Let's Enjoy Your</span> Trip In <span
-                            class="typed-words">Maui.</span><span class="typed-cursor typed-cursor--blink">|</span></h1>
+                    <h1 class="mb-5"><span class="d-block text-white">Let's Enjoy Your Trip In</span>
+                        <span class="typed-words text-white">Available Destination.</span>
+                        <span class="typed-cursor typed-cursor--blink">|</span>
+                    </h1>
 
                     <div class="row">
                         <div class="col-12">
@@ -145,7 +168,7 @@
                                     </div>
                                     <div class="col-lg-8">
                                         <label class="control control--checkbox mt-3">
-                                            <span class="caption">Save this search</span>
+                                            <span class="caption text-white">Save this search</span>
                                             <input type="checkbox" checked="checked">
                                             <div class="control__indicator"></div>
                                         </label>
@@ -159,12 +182,332 @@
         </div>
     </div>
 
+    <!-- Services -->
+
+    <div class="untree_co-section" id="Services">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-6 text-center mt-5">
+                    <h2 class="section-title text-center text-white mb-3">Our Services</h2>
+                    <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.</p>
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-lg-4 order-lg-1">
+                    <div class="h-100">
+                        <div class="frame h-100">
+                            <div class="feature-img-bg" style="background-image: url('./images/img_1.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <span class="flaticon-house display-4 text-primary"></span>
+                            <h3 class="text-white">Beautiful House</h3>
+                            <p class="mb-0 text-white">Even the all-powerful Pointing has no control about the blind
+                                texts.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-1">
+                        <div class="align-self-center">
+                            <span class="flaticon-restaurant display-4 text-primary"></span>
+                            <h3 class="text-white">Restaurants &amp; Cafe</h3>
+                            <p class="mb-0 text-white">Even the all-powerful Pointing has no control about the blind
+                                texts.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <span class="flaticon-mail display-4 text-primary"></span>
+                            <h3 class="text-white">Easy to Connect</h3>
+                            <p class="mb-0 text-white">Even the all-powerful Pointing has no control about the blind
+                                texts.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <span class="flaticon-phone-call display-4 text-primary"></span>
+                            <h3 class="text-white">24/7 Support</h3>
+                            <p class="mb-0 text-white">Even the all-powerful Pointing has no control about the blind
+                                texts.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- counter -->
+
+    <div class="untree_co-section count-numbers py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span id="counter" class="text-white" data-number="9313">9,313</span>
+                        </div>
+                        <span class="caption text-white">No. of Travels</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span id="counter1" class="text-white" data-number="8492">8,492</span>
+                        </div>
+                        <span class="caption text-white">No. of Clients</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span id="counter2" class="text-white" data-number="100">1000</span>
+                        </div>
+                        <span class="caption text-white">No. of Employees</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span id="counter3" class="text-white" data-number="120">120</span>
+                        </div>
+                        <span class="caption text-white">No. of Countries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- popular destination -->
+
+    <div class="col-lg-7 header-fluid">
+        <h2 class="section-title text-white">Popular Destination</h2>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel w-75 m-auto slide mt-5 carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./popular images/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.avif"
+                    class="d-block w-100" alt="img">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./popular images/happy-woman-making-self-portrait-ferris-wheel-background-walking-riverfront_273443-2228.jpg"
+                    class="d-block w-100" alt="img">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./popular images/photo-canal-city_1163-159.jpg" class="d-block w-100" alt="img">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Special offers And descount -->
+
+    <h1 class="text-center mb-5 new text-info text-decoration-underline">Special Offers & Discount</h1>
+    <div class="card-group gap-2 rounded">
+        <div class="card">
+            <img src="./images/statue-liberty-new-york-city-skyline-usa_268835-777.avif" class="card-img-top" alt="img">
+            <div class="card-body">
+                <h5 class="card-title fs-4">United State</h5>
+                <p class="card-text fs-1">$520</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last 4 days</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/woman-standing-wat-phra-that-pha-son-kaew-temple-khao-kho-phetchabun-thailand.jpg"
+                class="card-img-top" alt="img">
+            <div class="card-body">
+                <h5 class="card-title fs-4">Thailand</h5>
+                <p class="card-text fs-1">$600</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last 3 days</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/beautiful-landmark-fuji-mountain-chureito-pagoda-sunset-japan_335224-11.jpg"
+                class="card-img-top" alt="img">
+            <div class="card-body">
+                <h5 class="card-title fs-4">Japan</h5>
+                <p class="card-text fs-1">$750.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last 5 days</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- video And Details -->
+
+    <div class="untree_co-section videosection" id="about">
+        <div class="container">
+            <h1 class="text-info text-center section-title">About Section</h1>
+            <div class="row justify-content-between align-items-center bg-secondary rounded">
+                <div class="col-lg-6 mainbox">
+                    <figure class="img-play-video">
+                        <a id="play-video" class="video-play-button"
+                            href="./popular images/h98868977_230920_01_Titles with Backgrounds_4k_024.mp4"
+                            data-fancybox="">
+                            <span></span>
+                        </a>
+                        <img src="./images/slider-2.jpg" alt="Image" class="img-fluid rounded-20">
+                    </figure>
+                </div>
+
+                <div class="col-lg-5 mt-5">
+                    <h2 class="section-title text-white text-left mb-4">Take a look at Tour Video</h2>
+                    <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.</p>
+
+                    <p class="mb-4 text-white">A small river named Duden flows by their place and supplies it with the
+                        necessary
+                        regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
+                        mouth.</p>
+
+                    <ul class="list-unstyled two-col text-info clearfix">
+                        <li>Outdoor recreation activities</li>
+                        <li>Airlines</li>
+                        <li>Car Rentals</li>
+                        <li>Cruise Lines</li>
+                        <li>Hotels</li>
+                        <li>Railways</li>
+                        <li>Travel Insurance</li>
+                        <li>Package Tours</li>
+                        <li>Insurance</li>
+                        <li>Guide Books</li>
+                    </ul>
+
+                    <p><a href="#" class="btn btn-primary text-white">Get Started</a></p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+
+    <div class="container">
+        <h1 class="text-center fs-1 mb-5 text-info text-decoration-underline">Testimonials</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="./images/androgynous-avatar-non-binary-queer-person_23-2151100226.avif" alt="img">
+                    <h3>Jainam Pokal</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a hfghfgh fgf
+                        ante."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="./images/3d-rendering-cartoon-boy_23-2150797600.avif" alt="img">
+                    <h3>Shubham</h3>
+                    <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="./images/fashion-boy-with-yellow-jacket-blue-pants_71767-96.avif" alt="img">
+                    <h3>Vraj</h3>
+                    <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5 cta-section bg-dark">
+        <div class="container-fluid p-5 bgcolor">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="mb-2 text-white">Lets you Explore the Best. Contact Us Now</h2>
+                    <p class="mb-4 lead text-white text-white-opacity">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Excepturi, fugit?</p>
+                    <p class="mb-0"><a href="#"
+                            class="btn btn-outline-white bg-info text-white btn-md font-weight-bold">Get in touch</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 m-auto text-white">
+                    <h4>About Us</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="col-lg-4 text-white">
+                    <h4>Contact Us</h4>
+                    <p>Email: jainampokal@gmail.com</p>
+                    <p>Phone: +91 9016883804</p>
+                </div>
+                <div class="col-lg-4 text-white m-auto">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook text-white fs-1"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-white fs-1"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white fs-1"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-white fs-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end part -->
+
+    <div class="col-md-8 mb-3 mb-md-0 mt-5 text-info mx-auto">
+        <p>Copyright © 2024. All Rights Reserved. — Designed with love by <a href="https://untree.co" class="link-highlight text-light">Untree.co</a> Distributed By <a href="https://themewagon.com" class="text-light" target="_blank">Jainam Pokal</a>
+        </p>
+    </div>
+
+    <!-- script section -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
         </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
         </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="./counter.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
