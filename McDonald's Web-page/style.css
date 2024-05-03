@@ -1,9 +1,17 @@
-.container{
+.container {
     background-color: rgb(72, 72, 165) !important;
     border-radius: 20px;
     padding: 10px;
 }
 
-.slider_section{
+.slider_section {
     margin-top: 100px !important;
 }
+
+.hero_area {
+    background-image: url(./images/r2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
