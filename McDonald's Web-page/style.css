@@ -1,15 +1,9 @@
-.menu-item-link{
-    text-decoration: none !important;
-    color: black !important;
+.container{
+    background-color: rgb(72, 72, 165) !important;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-.autoplay{
-    margin-top: 90px !important;
-    width: 80% !important;
-    background-color: rgba(0, 0, 0, 0.24);
-}
-
-.w-50{
-    width: 70% !important;
-    height: 370px !important;
+.slider_section{
+    margin-top: 100px !important;
 }
