@@ -2,3 +2,14 @@
     text-decoration: none !important;
     color: black !important;
 }
+
+.autoplay{
+    margin-top: 90px !important;
+    width: 80% !important;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.w-50{
+    width: 70% !important;
+    height: 370px !important;
+}
