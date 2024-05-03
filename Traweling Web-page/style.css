@@ -225,11 +225,12 @@
 /* testimonial */
 
 .testimonial {
-    background-color: #f9f9f996;
+    background-color: #1A374D;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     padding: 40px 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    color: #fff;
   }
   .testimonial img {
     width: 80px;
