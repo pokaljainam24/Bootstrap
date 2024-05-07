@@ -7,60 +7,193 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
+    <!-- Header section -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-light text-uppercase p-3">
         <div class="container">
 
-            <a class="navbar-brand font-weight-bold" href="#">Logo</a>
+            <a class="navbar-brand font-weight-bold" href="#">
+                <img src="./logo.png" alt="logo">
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 
-                <div class="navbar-nav m-auto">
-                    <a class="nav-link px-lg-4 rounded" href="#">Home</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Features</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Pricing</a>
-                    <a class="nav-link px-lg-4 rounded" href="#">Blog</a>
+                <div class="navbar-nav gap-2 fs-5">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" href="#">Price</a>
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                    <a class="nav-link" href="#">Testimonial</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </div>
 
             </div>
         </div>
     </nav>
 
-    <section class="main py-5">
-        <div class="container py-5">
-            <div class="row py-5">
-                <div class="col-lg-6 py-5 mr-auto">
-                    <h3><small class="h1">Hello, I'm</small> <br>
-                        Jainam Pokal
-                    </h3>
-                    <h6>Web-Developer</h6>
+    <!-- Section-1 -->
 
-                    <input type="button" value="My-Work" class="btn-1 mt-5">
-                    <input type="button" value="Contact Me" class="btn-2 mt-5">
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1>Clean and Flexible Business Template</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</h2>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-learn">Purchase Now</a>
+                            <a href="#" class="btn btn-learn">View Featurese</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scrolldown">
+            <a id="scroll" href="#features" class="scroll"></a>
+        </div>
+    </section>
+
+    <!-- Section-2 -->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title text-center">
+                        <h2>-- OUR BEST SERVICES --</h2>
+                        <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had
+                            unconsciously</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s"
+                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Responsive
+                            Design</h4>
+                        <p class="wow fadeInUp" data-wow-delay=".5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Lorem ipsum
+                            dolor sit amet, consectetur adipisic-<br>ing elit, sed do eiusmod tempor incididunt ut <br>
+                            labore et dolore magna aliqua. Ut enim ad minim</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-fill-drip"></i>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s"
+                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Outstanding
+                            Animation</h4>
+                        <p class="wow fadeInUp" data-wow-delay=".5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Lorem ipsum
+                            dolor sit amet, consectetur adipisic-<br>ing elit, sed do eiusmod tempor incididunt ut <br>
+                            labore et dolore magna aliqua. Ut enim ad minim</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s"
+                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Unlimited
+                            Colors</h4>
+                        <p class="wow fadeInUp" data-wow-delay=".5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Lorem ipsum
+                            dolor sit amet, consectetur adipisic-<br>ing elit, sed do eiusmod tempor incididunt ut <br>
+                            labore et dolore magna aliqua. Ut enim ad minim</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Section-3 -->
+
+    <section id="counter">
+        <div class="container bg-dark rounded">
+            <div class="row">
+                <div class="title text-center mb-5">
+                    <h2>-- FUN FACTS --</h2>
+                    <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had
+                        unconsciously</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight text-center">
+                        <i class="fa-solid fa-code fs-3"></i>
+                        <p class="count-text mt-3">
+                            <span class="counter-digit text-light fs-4">136800 k</span>
+                        </p>
+                        <p>Lines Coded</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight text-center">
+                        <i class="fa-solid fa-compass fs-3"></i>
+                        <p class="count-text mt-3">
+                            <span class="counter-digit fs-4">7800 +</span>
+                        </p>
+                        <p>Lines Coded</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight text-center">
+                        <i class="fa-solid fa-pen-to-square fs-3"></i>
+                        <p class="count-text mt-3">
+                            <span class="counter-digit fs-4">399</span>
+                        </p>
+                        <p>Lines Coded</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight text-center">
+                        <i class="fa-solid fa-image fs-3"></i>
+                        <p class="count-text mt-3">
+                            <span class="counter-digit fs-4">9995</span>
+                        </p>
+                        <p>Lines Coded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-3 -->
+
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
+
 </body>
+
 </html>
