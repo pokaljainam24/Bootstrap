@@ -6,7 +6,7 @@
     background-size: cover;
     padding: 250px 0;
     position: relative;
-    margin-top: 0 !important;
+    margin-top: 100px !important;
 }
 
 #banner:before {
@@ -26,7 +26,7 @@
 }
 
 #banner .block h1 {
-    padding-bottom: 25px;
+    padding-bottom: 120px;
     font-size: 55px;
     font-weight: 100;
     color: #80d6a3;
