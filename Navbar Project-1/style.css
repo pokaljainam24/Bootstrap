@@ -1,0 +1,26 @@
+body{
+    background-image: url(./images/hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.modal-content{
+    background-image: url(./images/hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mt-5{
+    margin-top: 100px !important;
+    color: whitesmoke !important;
+}
+
+iframe{
+    width: auto !important;
+    height: 400px !important;
+    width: 700px !important;
+    border-radius: 30px !important;
+}
