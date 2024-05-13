@@ -3,11 +3,11 @@
 }
 
 .accordion-item {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #000000;
 }
 
 .accordion-header {
-    background-color: #f4f4f4;
+    background-color: #fc00008a;
     padding: 10px;
     cursor: pointer;
 }
