@@ -1,0 +1,34 @@
+.css-6ecy9b {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #646464;
+    margin: 1rem 0;
+}
+
+.css-6ecy9b span {
+    white-space: pre; 
+}
+
+.img-fluid{
+    border-radius: 70px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 768px) {
+    .css-6ecy9b {
+        font-size: 1.25rem; 
+    }
+}
+
+.feature{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#featured-3{
+    background-color: #F5F7F8 !important;
+}
+
+#CARD{
+    display: flex;
+    justify-content: center;
+}
