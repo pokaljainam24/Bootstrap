@@ -1,0 +1,26 @@
+body{
+  margin: 100px;
+    /* background-color: rgba(0, 0, 0, 0.493); */
+}
+
+.responsive{
+    padding: 0;
+    
+}
+
+.responsive>div{
+    box-shadow: border-radius(green, lightgreen, yellowgreen);
+    border-radius: 50%;
+}
+
+/* .slick-prev, .slick-next {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #ed0606;
+} */
+
+.slick-list{
+   margin: 30px;
+}

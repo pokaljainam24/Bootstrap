@@ -6,29 +6,105 @@
 }
 
 .css-6ecy9b span {
-    white-space: pre; 
+    white-space: pre;
 }
 
-.img-fluid{
+.img-fluid {
     border-radius: 70px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media (min-width: 768px) {
     .css-6ecy9b {
-        font-size: 1.25rem; 
+        font-size: 1.25rem;
     }
 }
 
-.feature{
+.feature {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
-#featured-3{
+#featured-3 {
     background-color: #F5F7F8 !important;
 }
 
-#CARD{
+#CARD {
     display: flex;
     justify-content: center;
+}
+
+/* Big-card section ----------------------------*/
+
+.btn-group-toggle .btn {
+    margin-bottom: 0.5rem;
+    border-radius: 90px !important;
+}
+
+.btn-group-toggle .btn input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+/* card ----------------*/
+
+.container {
+    padding: 40px 0;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+h2,
+h3 {
+    color: #333;
+}
+
+#img {
+    border-radius: none !important;
+    box-shadow: none;
+}
+
+#pro-card {
+    border: none;
+}
+
+/* Multiple crousal --------------------------------------*/
+
+#carouselExampleRide {
+    background-color: #F5F7F8 !important;
+}
+
+/* Accordian section ------------------------------------*/
+
+.accordion {
+    width: 100%;
+}
+
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+
+.accordion-header {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+}
+
+
+.accordion-body {
+    background-color: #ffffff;
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
 }
