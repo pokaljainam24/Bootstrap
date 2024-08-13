@@ -1,0 +1,355 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+body {
+  padding-top: 55px;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.816);
+  backdrop-filter: blur(50px);
+}
+
+.bubble {
+  background-image: url("./images/Screenshot\ 2024-06-25\ 230725.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+.bubble-content {
+  margin-top: 25%;
+}
+
+.ai-intelligence {
+  height: 700px;
+}
+
+.banner-background {
+  background-image: url("./images/unversity-student.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.banner-content {
+  margin-top: 20%;
+}
+
+.macbook-background {
+  background-image: url("./images/macbook-air.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#ipad-air {
+  background-image: url("./images/ipad.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#macbook-pro {
+  background-image: url("./images/macbook-pro-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+#ipad-pro {
+  background-image: url("./images/ipad-dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+#iphone {
+  background-image: url("./images/iphone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#app-store {
+  background-image: url("./images/app-store.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#trade-in {
+  background-image: url("./images/trade-in.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.carousel-item {
+  height: 80vh;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer {
+  font-size: small;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+table{
+  width: 500px;
+}
+
+#store-card-row,
+#store-card-row-2,
+#store-card-row-4 {
+  height: 550px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* overflow-y: hidden; */
+  scrollbar-width: none;
+}
+
+#store-card-row .card {
+  width: 400px;
+  height: 500px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#store-card-row img {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+#store-card-row-2 .card {
+  width: 500px;
+  height: 500px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#store-card-row-2 img {
+  border-radius: 20px;
+}
+
+#store-card-row-3 {
+  height: 350px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+#store-card-row-3 .card {
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#store-card-row-4 .card {
+  width: 300px;
+  height: 500px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#main-card-row {
+  height: 100px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+#main-card-row .card {
+  width: 130px;
+  height: 80px;
+  border: 0;
+}
+
+#special-store-card {
+  width: 400px;
+  height: 500px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#universal-card-row .card {
+  width: 100px;
+  height: 100px;
+  border: 0;
+}
+
+.mac-video {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.mac-banner {
+  background: url("./images/unversity-student.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  width: 100%;
+  height: 680px;
+}
+
+#universal-modal-card-row-2{
+  /* height: 100px;  */
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+#universal-modal-card-row-2 .mac-modal {
+  width: 400px;
+  height: 700px;
+}
+
+#mac-card-row-3 {
+  height: 20rem;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+#mac-card-row-2 {
+  height: auto;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+#mac-card-row-3 .card {
+  height: 300px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.ipad-lineups{
+  object-fit: contain;
+}
+
+.iphone-lineup{
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+}
+
+/* -------------- E N T E R T A I N M E N T - S L I D E R - 1 ---------------- */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slide img{
+  width: 250px;
+  height: 200px;
+}
+/* -------------- E N T E R T A I N M E N T - S L I D E R - 1 - E N D --------------- */
+
+
+.support-banner-2 img{
+  width: 70px;
+  height: 60px;
+}
